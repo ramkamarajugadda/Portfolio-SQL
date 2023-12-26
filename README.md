@@ -27,3 +27,52 @@ GROUP BY
 
 select TITLE,IMDB_SCORE, rank() over (order by IMDB_SCORE desc) as Ranking from netflix;
 
+##  find which country has highest and lowest movie make
+SELECT
+    PRODUCTION_COUNTRIES,
+    COUNT(*) AS movie_count
+FROM
+    netflix
+WHERE
+    PRODUCTION_COUNTRIES
+ IS NOT NULL
+GROUP BY
+    PRODUCTION_COUNTRIES
+
+ORDER BY
+    movie_count DESC
+LIMIT 1; -- for the highest
+
+SELECT
+    PRODUCTION_COUNTRIES,
+    COUNT(*) AS movie_count
+FROM
+    netflix
+WHERE
+    PRODUCTION_COUNTRIES
+ IS NOT NULL
+GROUP BY
+    PRODUCTION_COUNTRIES
+
+ORDER BY
+    movie_count ASC
+LIMIT 1; -- for the lowest
+
+## Find the average rating for the movie that belongs to multiple genres
+
+select GENRE,avg(IMDB_SCORE)   from netflix   
+group  by GENRE order by avg(IMDB_SCORE) desc;
+
+
+## categorise the genre according to age certification
+
+select  
+case 
+when AGE_CERTIFICATION <="PG"  then "children"
+when AGE_CERTIFICATION <="PG-13"  then "Teen"
+when AGE_CERTIFICATION  IN("R","TV-G","TV-Y","TV-PG","TV-14")  then "Adult" 
+else "Unknown"
+end as age_category ,genre ,count(*) as Genre_count from netflix group by AGE_CERTIFICATION,genre;
+
+
+

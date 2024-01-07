@@ -12,7 +12,13 @@ Download Here:[https://docs.google.com/spreadsheets/d/1txPFMHAdkoFacDhFfIyCFqRSB
 
 [https://drive.google.com/file/d/1tBhnXmWmzTlR9ZdT_sUcpmG5ZGKBk8OA/view]
 
+## Alex the Analyst Project
+ we explore the YouTube playlists of Alex the Analyst and answer some insights related questions using SQL
+ ### Dataset:
+ [Download Here]
 
+ [https://drive.google.com/file/d/1Wh8UNatz1iwNOKVOK8HPcVG4zRfYmCMm/view]
+ 
 
     
 

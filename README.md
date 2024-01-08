@@ -19,7 +19,11 @@ Download Here:[https://docs.google.com/spreadsheets/d/1txPFMHAdkoFacDhFfIyCFqRSB
 
 [https://drive.google.com/file/d/1uhRl2oqinmoh5-l_829HhoBhGtGK1i8z/view]
 
- 
+## DataWithDanny 
+
+I explored the case study on Danny's dinner as part of the Data with Danny case study challenge basic and intermediate sql functions to analyse the data and drive insights from the information.
+SQL Script [Go to this link]
+[https://8weeksqlchallenge.com/case-study-1/]
 
     
 
